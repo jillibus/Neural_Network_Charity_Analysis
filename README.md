@@ -1,5 +1,5 @@
 # Neural Network Charity Analysis
-![logo]('images/module_19_logo.png')
+![logo](images/module_19_logo.png)
 
 # Overview
 Overview of the loan prediction risk analysis:
