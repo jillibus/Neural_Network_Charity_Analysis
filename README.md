@@ -49,18 +49,29 @@ Preprocessing of the Charity Data consists of:
 _Lets see this in action, shall we?_
 
 ---
-<img src='images/application_df.png width=50% height=50%'/>    <img src='images/Drop_EIN_NAME.png width=50% height=50%'/>
+<img src='images/APPLICATION_DF.png' />    
+<img src='images/Drop_EIN_NAME.png' />
 
 ---
 
-<img src='images/NUM_UNIQUE.png width=50% height=50%'/>    <img src='images/Drop_EIN_NAME.png width=50% height=50%'/>
+<img src='images/NUM_UNIQUE.png' />    
 
 ---
-
-<img src="images/cryptonames_df.head.png"/>
+First Column with > 10 Unique Values - APPLICATION_TYPE - Plot/Move To Bins
+<img src='images/APPLICATION_TYPE.png' />
+<img src='images/APPLICATION_TYPE_PLOT.png' />
+<img src='images/APPLICATION_TYPE_BINS.png' />
 
 ---
-```
+Second Column with > 10 Unique Values - CLASSIFICATION - Plot/Move To Bins
+<img src='images/CLASSIFICATION.png' />
+<img src='images/CLASSIFICATION_PLOT.png' />
+<img src='images/CLASSIFICATION_BINS.png' />
+
+---
+Generate a list of Categorical Variables, use one-hot encoding and place them in a new DataFrame, dropping the originals.
+<img src='images/APPLICATION_CAT.png' />
+<img src='images/APPLICATION_CAT_drop.png' />
 
 ```
 <img src="images/X.head.png"/>
