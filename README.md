@@ -157,27 +157,79 @@ _10) Save and export your results to an HDF5 file, naming it AlphabetSoupCharity
 <img src='images/SAVE.png' />
 
 ---
-## For Deliverable 3: Optimize your Model
-At least 3 attempts if you can't get results over 75%
-Noisy variables are removed from features (2.5 pt)
-Additional neurons are added to hidden layers (2.5 pt)
-Additional hidden layers are added (5 pt)
-The activation function of hidden layers or output layers is changed for optimization (5 pt)
-The model's weights are saved every 5 epochs (2.5 pt)
-The results are saved to an HDF5 file (2.5 pt)
-<img src="images/predictions.png"/>
+## For Deliverable 3: Optimize your Model  
+The goal for Deliverable 3 is to optimize your model and to try to get your predictive accuracy increased to over 75%.
+I will attempt to achieve this with the following:
+1)  At least 3 attempts if you can't get results over 75%  
+2)  Noisy variables are removed from features 
+3)  Additional neurons are added to hidden layers
+4)  Additional hidden layers are added 
+5)  The activation function of hidden layers or output layers is changed for optimization 
+6)  The model's weights are saved every 5 epochs
+7)  The results are saved to an HDF5 file
+
+_Okay, lets see this in action, shall we?_
 
 ---
-```
+1)  At least 3 attempts if you can't get results over 75%_  
+_All of the PreProcess Steps above were followed, I am going to start with any **new** preprocessing steps here_  
 
-```
-<img src="images/pcs_df.head.png"/>
+_2)  **new** Noisy variables are removed from features_  
+<img src='images/ASK_AMT.png' />
+<img src='images/ASK_AMT_PLOT.png' />
+<img src='images/ASK_AMT_BINS.png' />
+
+Remake of _application_cat_ dataframe to include ASK_AMT   
+<img src='images/APPLICATION_CAT_OPT.png' />
+
+Split, Train, Scale Data  
+<img src='images/SPLIT_TRAIN_SCALED_OPT.png' />
 
 ---
-```
+**FIRST RUN**  
+_3)  Additional neurons are added to hidden layers_  
+_4)  Additional hidden layers are added_   
+_5)  The activation function of hidden layers or output layers is changed for optimization_   
+<img src='images/LAYERS_1_OPT.png' />
 
-```
-<img src="images/clustered_df.head.png"/>
+---
+_6)  The model's weights are saved every 5 epochs_  
+<img src='images/COMPILE_CALLBACK_FIT_1_OPT.png' />
+
+The results for First Run_  
+<img src='images/EPOCH_TEST_1_OPT.png' />
+
+---
+**SECOND RUN**  
+_3)  Additional neurons are added to hidden layers_  
+_4)  Additional hidden layers are added_   
+_5)  The activation function of hidden layers or output layers is changed for optimization_   
+<img src='images/LAYERS_2_OPT.png' />
+
+---
+_6)  The model's weights are saved every 5 epochs_  
+<img src='images/COMPILE_CALLBACK_FIT_2_OPT.png' />
+
+The results for First Run_  
+<img src='images/EPOCH_TEST_2_OPT.png' />  
+
+---
+**THIRD RUN**  
+_3)  Additional neurons are added to hidden layers_  
+_4)  Additional hidden layers are added_   
+_5)  The activation function of hidden layers or output layers is changed for optimization_   
+<img src='images/LAYERS_3_OPT.png' />
+
+---
+_6)  The model's weights are saved every 5 epochs_  
+<img src='images/COMPILE_CALLBACK_FIT_3_OPT.png' />
+
+The results for First Run_  
+<img src='images/EPOCH_TEST_3_OPT.png' />
+
+---
+_7)  The results are saved to an HDF5 file_  
+<img src='images/SAVE_Optimized.png' />
 
 ## For Deliverable 4: Results and Summary
 ### Results: 
@@ -191,36 +243,6 @@ The results are saved to an HDF5 file (2.5 pt)
   * How many neurons, layers, and activation functions did you select for your neural network model, and why?
   * Were you able to achieve the target model performance?
   * What steps did you take to try and increase model performance?
-
-```
-
-```
-<img src="images/clustered_df.plot.png"/>
-
----
-```
-
-```
-<img src="images/clustered_df.table.png"/>
-
----
-```
-
-```
-```
-
-```
----
-```
-
-```
-```
-
-```
-<img src="images/plot_df.head.png"/>
-
----
-<img src="images/plot_df.png"/>
 
 # Summary
 
