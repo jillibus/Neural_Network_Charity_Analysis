@@ -251,26 +251,45 @@ _7)  The results are saved to an HDF5 file_
   * Were you able to achieve the target model performance?
     *  No, I came very close and while the model was running, it would go over 75% but would end up under 75% by the end of the epoch. 
   * What steps did you take to try and increase model performance?
-    *  I added additional hidden layers, increased neurons, tried the Tanh activation, as well as encoded the ASK_AMT column.   
+    *  I added additional hidden layers, increased neurons, increased epochs, tried the Tanh activation, as well as encoded the ASK_AMT column.   
+
+---
+**Run Results:**  
+
+**First Run: (80/30 - relu/relu - sigmoid) # of epoch = 100**  
+268/268 - 1s - loss: 0.5576 - accuracy: 0.7283 - 524ms/epoch - 2ms/step
+Loss: 0.5576340556144714, Accuracy: 0.7282798886299133
+
+**Second Run: (50/30/20 - relu/relu/sigmoid - sigmoid) # of epoch = 100**  
+268/268 - 1s - loss: 0.5632 - accuracy: 0.7291 - 522ms/epoch - 2ms/step
+Loss: 0.5631998181343079, Accuracy: 0.7290962338447571
+
+_Optimized - ASK_AMT (binned)_  
+**First Run: (80/30 - relu/relu - sigmoid) # of epoch = 100**  
+268/268 - 1s - loss: 0.5648 - accuracy: 0.7286 - 514ms/epoch - 2ms/step
+Loss: 0.5648201107978821, Accuracy: 0.7286297082901001
+
+**Second Run: (50/30/20 - relu/relu/sigmoid - sigmoid) # of epoch = 100**  
+268/268 - 0s - loss: 0.5654 - accuracy: 0.7272 - 484ms/epoch - 2ms/step
+Loss: 0.5654367804527283, Accuracy: 0.7272303104400635
+
+**Third Run: (100/75/50 - tanh/relu/sigmoid - sigmoid) # of epoch = 200**  
+268/268 - 1s - loss: 0.6167 - _accuracy: 0.7298_ - 502ms/epoch - 2ms/step
 
 # Summary
 
-Summarize the overall results of the deep learning model. Include a recommendation for how a different model could solve this classification problem, and explain your recommendation.
+My first try at this deep-learning neural network model was a 2 hidden layer model with 80/30 neurons using the ReLU activation and Sigmoid output to achieve my Target response of a binary answer.  The results came very close to our goal with a 72.8% accuracy.
 
-This deep-learning neural network model is made of two hidden layers with 80 and 30 neurons respectively.
-The input data has 43 features and 25,724 samples.
-The output layer is made of a unique neuron as it is a binary classification.
-To speed up the training process, we are using the activation function ReLU for the hidden layers. As our output is a binary classification, Sigmoid is used on the output layer.
-For the compilation, the optimizer is adam and the loss function is binary_crossentropy.
-The model accuracy is under 75%. This is not a satisfying performance to help predict the outcome of the charity donations.
-To increase the performance of the model, we applied bucketing to the feature ASK_AMT and organized the different values by intervals.
-We increased the number of neurons on one of the hidden layers, then we used a model with three hidden layers.
-We also tried a different activation function (tanh) but none of these steps helped improve the model's performance.
+So with my second attempt I added a third layer dividing it up as 50/30/20 and making the new layer another ReLU activation.  The results did a bit better with 72.9% accuracy.
 
-The deep learning neural network model did not reach the target of 75% accuracy. Considering that this target level is pretty average we could say that the model is not outperforming.
-Since we are in a binary classification situation, we could use a supervised machine learning model such as the Random Forest Classifier to combine a multitude of decision trees to generate a classified output and evaluate its performance against our deep learning model.
+Starting over with our optimized model, I re-preprocessed our data by encoding the ASK_AMT colument and creating bins for its data.  I then reran the first 2 runs to see if any improvement was made by recatergorizing this column.
 
+The First Run Optimized resulted in 72.9% so it did improve by .03%
+The Second Run Optimized resulted in 72.7% so that run decreased in accuracy by -.19%
 
+The Third Run Optimized, I increased the neurons in the layers to (100/75/50), changed the first layer to tanh, and increased the number of epochs to 200. Since I was so close to the 75% I wanted to see if I could get there with just a little more of the epochs run.  I also wanted to see if increasing the neurons and possibly adding the tanh activation would help.  
+
+The results were an accuracy of 73% which was our highest accuracy result.  The additional changes made just a slight improvement, .07%, in the accuracy of the model, so I am not 100% sure if I am approaching this with the best model at this time.  I will need to research more, if this 73% isn't satisfactory to the Board at AlphabetSoup.
 
 Let me know if you have any questions or need more information.
 
