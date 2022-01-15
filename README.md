@@ -62,15 +62,13 @@ _3) Determine the number of unique values for each column._
 <img src='images/NUM_UNIQUE.png' />    
 
 ---
-_4) Those with >10 unique values, Determine number of data points, plot density, move to bins._
-<p>
-**First Column >10 Unique Values** - APPLICATION_TYPE 
+_4) Those with >10 unique values, Determine number of data points, plot density, move to bins._  
+**First Column with >10 Unique Values** - APPLICATION_TYPE 
 <img src='images/APPLICATION_TYPE.png' />
 <img src='images/APPLICATION_TYPE_PLOT.png' />
 <img src='images/APPLICATION_TYPE_BINS.png' />
-
----
-**Second Column >10 Unique Values** - CLASSIFICATION 
+  
+**Second Column with >10 Unique Values** - CLASSIFICATION 
 <img src='images/CLASSIFICATION.png' />
 <img src='images/CLASSIFICATION_PLOT.png' />
 <img src='images/CLASSIFICATION_BINS.png' />
