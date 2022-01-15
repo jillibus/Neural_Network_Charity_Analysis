@@ -38,11 +38,11 @@ Preprocessing of the Charity Data consists of:
 1) Reading in the data set charity_data.csv into a pandas DataFrame.
 2) Drop unnecessary columns that are not needed for the analysis, EIN and NAME.
 3) Determine the number of unique values for each column.
-4) Those with >10 unique values, 
- * Determine the number of data points for each unique value.
- * Plot the density to create a "cutoff" for rare categorical values to place in an "Others" bin
- * Validate your binning of this column worked
- * Repeat until all necessary columns are properly binned.
+4) Those with >10 unique values
+    - Determine the number of data points for each unique value.
+    - Plot the density to create a "cutoff" for rare categorical values to place in an "Others" bin
+    - Validate your binning of this column worked
+    - Repeat until all necessary columns are properly binned.
 5) Generate a list of categorical variables.
 6) Encode categorical variables using 'one-hot encoding' and place them in a new DataFrame, dropping the originals.
 7) Merge the one-hot encoding DataFrame with the original DataFrame, and drop the originals.
@@ -63,13 +63,14 @@ _3) Determine the number of unique values for each column._
 
 ---
 _4) Those with >10 unique values, Determine number of data points, plot density, move to bins._
-**First Column with > 10 Unique Values** - APPLICATION_TYPE 
+<p>
+**First Column >10 Unique Values** - APPLICATION_TYPE 
 <img src='images/APPLICATION_TYPE.png' />
 <img src='images/APPLICATION_TYPE_PLOT.png' />
 <img src='images/APPLICATION_TYPE_BINS.png' />
 
 ---
-**Second Column with > 10 Unique Values** - CLASSIFICATION 
+**Second Column >10 Unique Values** - CLASSIFICATION 
 <img src='images/CLASSIFICATION.png' />
 <img src='images/CLASSIFICATION_PLOT.png' />
 <img src='images/CLASSIFICATION_BINS.png' />
