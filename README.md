@@ -236,17 +236,39 @@ _7)  The results are saved to an HDF5 file_
 
 * Data Preprocessing
   * What variable(s) are considered the target(s) for your model?
+    * The IS_SUCCESSFUL column contains information on weither the charity has used past donations successfully. This Y/N column is considered the target column for our neural network.
   * What variable(s) are considered to be the features for your model?
+    * The columns, APPLICATION_TYPE, AFFILIATION, CLASSIFICATION, USE_CASE, ORGANIZATION, STATUS, INCOME_AMT, SPECIAL_CONSIDERATIONS, ASK_AMT will be our feature columns.  We will evaluate any of these columns and encode those needing it, then split these into training and test datasets.
   * What variable(s) are neither targets nor features, and should be removed from the input data?
+    * The EIN and NAME columns are just identifier columns, so we will remove them from the dataset.
   
 * Compiling, Training, and Evaluating the Model
   * How many neurons, layers, and activation functions did you select for your neural network model, and why?
+    *  Our original attempt used 2 hidden layers with 80/30 neurons.  This provided us with input data of 43 features and 25,724 samples.
+    *  The output layer was an unique neuron set as a binary classification (for the target column).
+    *  I used the activation layer 'ReLU' for the hidden functions for optimization, and our output layer of 'Sigmoid' so we would have a binary classification.
+    *  I used the optimizer 'adam' and the loss function 'binary_crossentropy'.     
   * Were you able to achieve the target model performance?
+    *  No, I came very close and while the model was running, it would go over 75% but would end up under 75% by the end of the epoch. 
   * What steps did you take to try and increase model performance?
+    *  I added additional hidden layers, increased neurons, tried the Tanh activation, as well as encoded the ASK_AMT column.   
 
 # Summary
 
 Summarize the overall results of the deep learning model. Include a recommendation for how a different model could solve this classification problem, and explain your recommendation.
+
+This deep-learning neural network model is made of two hidden layers with 80 and 30 neurons respectively.
+The input data has 43 features and 25,724 samples.
+The output layer is made of a unique neuron as it is a binary classification.
+To speed up the training process, we are using the activation function ReLU for the hidden layers. As our output is a binary classification, Sigmoid is used on the output layer.
+For the compilation, the optimizer is adam and the loss function is binary_crossentropy.
+The model accuracy is under 75%. This is not a satisfying performance to help predict the outcome of the charity donations.
+To increase the performance of the model, we applied bucketing to the feature ASK_AMT and organized the different values by intervals.
+We increased the number of neurons on one of the hidden layers, then we used a model with three hidden layers.
+We also tried a different activation function (tanh) but none of these steps helped improve the model's performance.
+
+The deep learning neural network model did not reach the target of 75% accuracy. Considering that this target level is pretty average we could say that the model is not outperforming.
+Since we are in a binary classification situation, we could use a supervised machine learning model such as the Random Forest Classifier to combine a multitude of decision trees to generate a classified output and evaluate its performance against our deep learning model.
 
 
 
