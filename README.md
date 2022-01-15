@@ -35,46 +35,55 @@ Preprocessing involves both data validation and data imputation. The goal of dat
 Data preprocessing is used in both database-driven and rules-based applications. In machine learning (ML) processes, data preprocessing is critical for ensuring large datasets are formatted in such a way that the data they contain can be interpreted and parsed by learning algorithms. (https://www.techopedia.com/definition/14650/data-preprocessing)
 
 Preprocessing of the Charity Data consists of:
-* Reading in the data set charity_data.csv into a pandas DataFrame
-* Drop unnecessary columns that are not needed for the analysis, EIN and NAME.
-* Determine the number of unique values for each column
- * Those with >10 unique values, 
+1) Reading in the data set charity_data.csv into a pandas DataFrame.
+2) Drop unnecessary columns that are not needed for the analysis, EIN and NAME.
+3) Determine the number of unique values for each column.
+4) Those with >10 unique values, 
  * Determine the number of data points for each unique value.
  * Plot the density to create a "cutoff" for rare categorical values to place in an "Others" bin
  * Validate your binning of this column worked
  * Repeat until all necessary columns are properly binned.
-* Generate a list of categorical variables
- * Encode categorical variables using 'one-hot encoding' and place them in a new DataFrame, dropping the originals
+5) Generate a list of categorical variables.
+6) Encode categorical variables using 'one-hot encoding' and place them in a new DataFrame, dropping the originals.
+7) Merge the one-hot encoding DataFrame with the original DataFrame, and drop the originals.
 
 _Lets see this in action, shall we?_
 
 ---
-<img src='images/APPLICATION_DF.png' />    
+_1) Reading in the data set charity_data.csv into a pandas DataFrame._
+<img src='images/APPLICATION_DF.png' />  
+
+---
+_2) Drop unnecessary columns that are not needed for the analysis, EIN and NAME._
 <img src='images/Drop_EIN_NAME.png' />
 
 ---
-
+_3) Determine the number of unique values for each column._
 <img src='images/NUM_UNIQUE.png' />    
 
 ---
-First Column with > 10 Unique Values - APPLICATION_TYPE - Plot/Move To Bins
+_4) Those with >10 unique values, Determine number of data points, plot density, move to bins._
+**First Column with > 10 Unique Values** - APPLICATION_TYPE 
 <img src='images/APPLICATION_TYPE.png' />
 <img src='images/APPLICATION_TYPE_PLOT.png' />
 <img src='images/APPLICATION_TYPE_BINS.png' />
 
 ---
-Second Column with > 10 Unique Values - CLASSIFICATION - Plot/Move To Bins
+**Second Column with > 10 Unique Values** - CLASSIFICATION 
 <img src='images/CLASSIFICATION.png' />
 <img src='images/CLASSIFICATION_PLOT.png' />
 <img src='images/CLASSIFICATION_BINS.png' />
 
 ---
-Generate a list of Categorical Variables, use one-hot encoding and place them in a new DataFrame, dropping the originals.
+_5) Generate a list of categorical variables._
 <img src='images/APPLICATION_CAT.png' />
+
+---
+_6) Encode categorical variables using 'one-hot encoding' and place them in a new DataFrame, dropping the originals._
 <img src='images/APPLICATION_CAT_drop.png' />
 
 ---
-Final Merged DataFrame 
+_7) Merge the one-hot encoding DataFrame with the original DataFrame, and drop the originals._
 <img src='images/mergedDataFrame.png' />
 
 ## For Deliverable 2: Compile, Train and Evaluate the Model
