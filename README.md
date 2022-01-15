@@ -46,6 +46,9 @@ Preprocessing of the Charity Data consists of:
 5) Generate a list of categorical variables.
 6) Encode categorical variables using 'one-hot encoding' and place them in a new DataFrame, dropping the originals.
 7) Merge the one-hot encoding DataFrame with the original DataFrame, and drop the originals.
+8) Split the preprocessed data into features and target arrays.
+9) Split the preprocessed data into training and testing datasets.
+10) Standardize numerical variables using Scikit-Learn's _StandardScaler_ class, then scale the data.
 
 _Lets see this in action, shall we?_
 
@@ -84,6 +87,15 @@ _6) Encode categorical variables using 'one-hot encoding' and place them in a ne
 ---
 _7) Merge the one-hot encoding DataFrame with the original DataFrame, and drop the originals._
 <img src='images/mergedDataFrame.png' />
+
+---
+_8) Split the preprocessed data into features and target arrays._  
+_9) Split the preprocessed data into training and testing datasets._  
+<img src='images/SPLIT.png' />
+
+---
+_10) Standardize numerical variables using Scikit-Learn's _StandardScaler_ class, then scale the data._  
+<img src='images/SCALER.png' />
 
 ## For Deliverable 2: Compile, Train and Evaluate the Model
 
