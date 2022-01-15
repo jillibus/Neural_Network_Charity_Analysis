@@ -116,7 +116,7 @@ To do this we will follow the following steps:
 _Like Deliverable 1 above, lets see this in action, shall we?_
 
 ---
-**FIRST RUN**
+**FIRST RUN**  
 _1) Starting in the cell after we _"Scaled The Data"_  
 _2) Create a neural network model by assigning the number of input features and  nodes for each layer using Tensorflow Keras._  
 _3) Create the first hidden layer and choose an appropriate activation function._  
@@ -134,7 +134,7 @@ _9) Evaluate the model using the test data to determine the loss and accuracy._
 <img src='images/EPOCH_TEST_1.png' />
 
 ---
-**SECOND RUN**
+**SECOND RUN**  
 _1) Starting in the cell after we _"Scaled The Data"_  
 _2) Create a neural network model by assigning the number of input features and  nodes for each layer using Tensorflow Keras._  
 _3) Create the first hidden layer and choose an appropriate activation function._  
@@ -145,11 +145,8 @@ _6) Check the structure of the model._
 
 ---
 _7) Compile and train the model._   
-<img src='images/COMPILE_FIT_3.png' />
-
----
 _8) Create a callback that saves the model's weights every 5 epochs._  
-<img src='images/COMPILE_1.png' />
+<img src='images/COMPILE_CALLBACK_FIT_2.png' />
 
 ---
 _9) Evaluate the model using the test data to determine the loss and accuracy._  
