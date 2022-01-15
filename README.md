@@ -46,6 +46,9 @@ Preprocessing of the Charity Data consists of:
 5) Generate a list of categorical variables.
 6) Encode categorical variables using 'one-hot encoding' and place them in a new DataFrame, dropping the originals.
 7) Merge the one-hot encoding DataFrame with the original DataFrame, and drop the originals.
+8) Split the preprocessed data into features and target arrays.
+9) Split the preprocessed data into training and testing datasets.
+10) Standardize numerical variables using Scikit-Learn's _StandardScaler_ class, then scale the data.
 
 _Lets see this in action, shall we?_
 
@@ -85,10 +88,152 @@ _6) Encode categorical variables using 'one-hot encoding' and place them in a ne
 _7) Merge the one-hot encoding DataFrame with the original DataFrame, and drop the originals._
 <img src='images/mergedDataFrame.png' />
 
+---
+_8) Split the preprocessed data into features and target arrays._  
+_9) Split the preprocessed data into training and testing datasets._  
+<img src='images/SPLIT.png' />
+
+---
+_10) Standardize numerical variables using Scikit-Learn's _StandardScaler_ class, then scale the data._  
+<img src='images/SCALER.png' />
+
 ## For Deliverable 2: Compile, Train and Evaluate the Model
+
+The next step in our machine learning process is to take our pre-processed datasets, now in a scaled dataframe, split into a Training and Testing setup and compile our model, train our machine with our training data, and then evaluate the model with our testing dataset.  
+
+To do this we will follow the following steps:
+1) Continue where we left off using our AlphabetSoupCharity.ipynb file.
+2) Create a neural network model by assigning the number of input features and  nodes for each layer using Tensorflow Keras.
+3) Create the first hidden layer and choose an appropriate activation function.
+4) If necessary, add a second hidden layer with an appropriate activation function.
+5) Create an output layer with an appropriate activation function.
+6) Check the structure of the model.
+7) Compile and train the model.
+8) Create a callback that saves the model's weights every 5 epochs.
+9) Evaluate the model using the test data to determine the loss and accuracy.
+10) Save and export your results to an HDF5 file, naming it AlphabetSoupCharity.h5.
+
+_Like Deliverable 1 above, lets see this in action, shall we?_
+
+---
+**FIRST RUN**
+_1) Starting in the cell after we _"Scaled The Data"_  
+_2) Create a neural network model by assigning the number of input features and  nodes for each layer using Tensorflow Keras._  
+_3) Create the first hidden layer and choose an appropriate activation function._  
+_4) If necessary, add a second hidden layer with an appropriate activation function._  
+_5) Create an output layer with an appropriate activation function._  
+_6) Check the structure of the model._  
+<img src='images/LAYERS_1.png' />
+
+---
+_7) Compile and train the model._  
+<img src='images/COMPILE_FIT_1.png' />
+      
+---
+_9) Evaluate the model using the test data to determine the loss and accuracy._  
+<img src='images/EPOCH_TEST_1.png' />
+
+---
+**SECOND RUN**
+_1) Starting in the cell after we _"Scaled The Data"_  
+_2) Create a neural network model by assigning the number of input features and  nodes for each layer using Tensorflow Keras._  
+_3) Create the first hidden layer and choose an appropriate activation function._  
+_4) If necessary, add a second hidden layer with an appropriate activation function._  
+_5) Create an output layer with an appropriate activation function._  
+_6) Check the structure of the model._ 
+<img src='images/LAYERS_2.png' />
+
+---
+_7) Compile and train the model._   
+<img src='images/COMPILE_FIT_3.png' />
+
+---
+_8) Create a callback that saves the model's weights every 5 epochs._  
+<img src='images/COMPILE_1.png' />
+
+---
+_9) Evaluate the model using the test data to determine the loss and accuracy._  
+<img src='images/EPOCH_TEST_2.png' />
+
+---
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 <img src="images/"/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 ```
