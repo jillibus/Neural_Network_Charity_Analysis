@@ -73,20 +73,18 @@ Generate a list of Categorical Variables, use one-hot encoding and place them in
 <img src='images/APPLICATION_CAT.png' />
 <img src='images/APPLICATION_CAT_drop.png' />
 
-```
-<img src="images/X.head.png"/>
-
 ---
-
+Final Merged DataFrame 
+<img src='images/mergedDataFrame.png' />
 
 ## For Deliverable 2: Compile, Train and Evaluate the Model
 
 
-<img src="images/pcs_df.nopredictions.png"/>
+<img src="images/"/>
 
 
 ```
-<img src="images/elbow_curve.png"/>
+<img src="images/'/>
 
 ---
 ## For Deliverable 3: Optimize your Model
