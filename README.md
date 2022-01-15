@@ -117,7 +117,7 @@ _Like Deliverable 1 above, lets see this in action, shall we?_
 
 ---
 **FIRST RUN**  
-_1) Starting in the cell after we _"Scaled The Data"_  
+_1) Starting in the cell after we "Scaled The Data"_  
 _2) Create a neural network model by assigning the number of input features and  nodes for each layer using Tensorflow Keras._  
 _3) Create the first hidden layer and choose an appropriate activation function._  
 _4) If necessary, add a second hidden layer with an appropriate activation function._  
@@ -135,7 +135,7 @@ _9) Evaluate the model using the test data to determine the loss and accuracy._
 
 ---
 **SECOND RUN**  
-_1) Starting in the cell after we _"Scaled The Data"_  
+_1) Starting in the cell after we "Scaled The Data"_
 _2) Create a neural network model by assigning the number of input features and  nodes for each layer using Tensorflow Keras._  
 _3) Create the first hidden layer and choose an appropriate activation function._  
 _4) If necessary, add a second hidden layer with an appropriate activation function._  
@@ -153,88 +153,8 @@ _9) Evaluate the model using the test data to determine the loss and accuracy._
 <img src='images/EPOCH_TEST_2.png' />
 
 ---
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<img src="images/"/>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-```
-<img src="images/'/>
+_10) Save and export your results to an HDF5 file, naming it AlphabetSoupCharity.h5._
+<img src='images/SAVE.png' />
 
 ---
 ## For Deliverable 3: Optimize your Model
