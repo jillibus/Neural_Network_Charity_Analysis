@@ -122,10 +122,10 @@ _2) Create a neural network model by assigning the number of input features and 
 <img src='images/LAYERS_1.png' />
 
 ---
-_3) Create the first hidden layer and choose an appropriate activation function._
-_4) If necessary, add a second hidden layer with an appropriate activation function._
-_5) Create an output layer with an appropriate activation function._
-_6) Check the structure of the model._
+_3) Create the first hidden layer and choose an appropriate activation function._  
+_4) If necessary, add a second hidden layer with an appropriate activation function._  
+_5) Create an output layer with an appropriate activation function._  
+_6) Check the structure of the model._  
 <img src='images/COMPILE_FIT_1.png' />
 
 ---
