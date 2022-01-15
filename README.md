@@ -153,7 +153,7 @@ _9) Evaluate the model using the test data to determine the loss and accuracy._
 <img src='images/EPOCH_TEST_2.png' />
 
 ---
-_10) Save and export your results to an HDF5 file, naming it AlphabetSoupCharity.h5._
+_10) Save and export your results to an HDF5 file, naming it AlphabetSoupCharity.h5._  
 <img src='images/SAVE.png' />
 
 ---
