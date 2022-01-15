@@ -135,7 +135,7 @@ _9) Evaluate the model using the test data to determine the loss and accuracy._
 
 ---
 **SECOND RUN**  
-_1) Starting in the cell after we "Scaled The Data"_
+_1) Starting in the cell after we "Scaled The Data"_  
 _2) Create a neural network model by assigning the number of input features and  nodes for each layer using Tensorflow Keras._  
 _3) Create the first hidden layer and choose an appropriate activation function._  
 _4) If necessary, add a second hidden layer with an appropriate activation function._  
@@ -158,7 +158,7 @@ _10) Save and export your results to an HDF5 file, naming it AlphabetSoupCharity
 
 ---
 ## For Deliverable 3: Optimize your Model  
-The goal for Deliverable 3 is to optimize your model and to try to get your predictive accuracy increased to over 75%.
+The goal for Deliverable 3 is to optimize your model and to try to get your predictive accuracy increased to over 75%.  
 I will attempt to achieve this with the following:
 1)  At least 3 attempts if you can't get results over 75%  
 2)  Noisy variables are removed from features 
@@ -171,8 +171,8 @@ I will attempt to achieve this with the following:
 _Okay, lets see this in action, shall we?_
 
 ---
-1)  At least 3 attempts if you can't get results over 75%_  
-_All of the PreProcess Steps above were followed, I am going to start with any **new** preprocessing steps here_  
+_1)  At least 3 attempts if you can't get results over 75%_  
+All of the PreProcess Steps above were followed, I am going to start with any **new** preprocessing steps here  
 
 _2)  **new** Noisy variables are removed from features_  
 <img src='images/ASK_AMT.png' />
@@ -196,7 +196,7 @@ _5)  The activation function of hidden layers or output layers is changed for op
 _6)  The model's weights are saved every 5 epochs_  
 <img src='images/COMPILE_CALLBACK_FIT_1_OPT.png' />
 
-The results for First Run_  
+The results for First Run  
 <img src='images/EPOCH_TEST_1_OPT.png' />
 
 ---
@@ -210,7 +210,7 @@ _5)  The activation function of hidden layers or output layers is changed for op
 _6)  The model's weights are saved every 5 epochs_  
 <img src='images/COMPILE_CALLBACK_FIT_2_OPT.png' />
 
-The results for First Run_  
+The results for Second Run  
 <img src='images/EPOCH_TEST_2_OPT.png' />  
 
 ---
@@ -224,7 +224,7 @@ _5)  The activation function of hidden layers or output layers is changed for op
 _6)  The model's weights are saved every 5 epochs_  
 <img src='images/COMPILE_CALLBACK_FIT_3_OPT.png' />
 
-The results for First Run_  
+The results for Third Run  
 <img src='images/EPOCH_TEST_3_OPT.png' />
 
 ---
